@@ -1,0 +1,1 @@
+select * from cmi-analytics-dev.input.customer_orders
