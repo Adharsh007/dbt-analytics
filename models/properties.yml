@@ -1,0 +1,15 @@
+sources:
+  - name: "CMI-SOURCES"
+    database: cmi-analytics-dev
+    schema: input
+    tables:
+      - name: Sales_Data_v1
+      - name: DobDetails
+
+models:
+  - name: "Sales_Data_v1"
+    config:
+      materialized: 'table'
+  - name: "user_dob"
+    config:
+      materialized: 'table'
