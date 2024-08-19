@@ -5,6 +5,8 @@ sources:
     tables:
       - name: Sales_Data_v1
       - name: DobDetails
+      - name: payment
+      - name: DIM_SALES
 
 models:
   - name: "Sales_Data_v1"
@@ -13,3 +15,9 @@ models:
   - name: "user_dob"
     config:
       materialized: 'table'
+  - name: "payment"
+    config:
+      materialized: 'table'
+  - name: "product_incremental"
+    config:
+      materialized: 'incremental'
